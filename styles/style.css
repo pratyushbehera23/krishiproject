@@ -4,21 +4,6 @@
     --color-primary: #009600;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html {
-    scroll-behavior: smooth;
-    font-size: 62.5%;
-}
-body {
-    font-size: 1.6rem;
-    font-family: sans-serif;
-    /* background: #f1ffde; */
-}
-
 /* Text selection color */
 ::-moz-selection {
     color: #fff;
@@ -45,16 +30,11 @@ body {
     background: #aaa;
 }
 
-.BUG {
-    border: 1px dashed #f00;
-}
-
-
 /* DEFAULT */
 
 h2 {
     color: #333;
-    padding-top: 4rem;
+    padding-top: 6rem;
     margin-bottom: 2rem;
     border-bottom: 4px solid var(--color-primary);
     display: inline-block;
@@ -84,11 +64,20 @@ main {
     padding: 2rem;
 }
 
+ul {
+    padding-right: 2rem;
+    color: #555;
+}
+li {
+    font-size: 1.4rem;
+    list-style:inside;
+}
+
 
 /* HEADER */
 
 header {
-    padding: 2rem;
+    padding-top: 4rem;
     display: flex;
     justify-content: center;
 }
@@ -142,9 +131,16 @@ th {
     text-align: left;
 }
 
+.hero-video {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
 .btn {
     display: inline-block;
-    margin: 2rem 0;
+    margin-top: 2rem;
     padding: 1rem 2rem;
     border-radius: 100px;
     text-decoration: none;
@@ -161,6 +157,11 @@ th {
 
 /* FLOW */
 
+.flowimg {
+    max-width: 90vw;
+    width: 500px;
+    border-radius: 8px;
+}
 
 
 /* DESIGN */
@@ -169,6 +170,7 @@ th {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
+    padding-top: 1rem;
 }
 
 .logo {
@@ -197,7 +199,7 @@ th {
     background: #eee;
 }
 .c3 {
-    background: #0f0;
+    background: #00B812;
 }
 
 
@@ -207,21 +209,27 @@ th {
 
 /* USER INTERFACE */
 
+.screens {
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    padding-bottom: 1rem;
+}
 .screen {
-    /* width: 200px; */
+    width: 200px;
     border-radius: 4px;
 }
 
-.screen {
-    background-image: url('assets/FarmerHomeWF.jpg');
-    background-size: cover;
-    width: 300px;
-    height: 500px;
-    transition: all 0.5s;
+.wf .screen {
+    opacity: 0.5;
 }
-.screen:hover {
-    background-image: url('assets/FarmerHome.jpg');
+.ui .screen {
+    box-shadow: 0px 0px 8px #aaa;
 }
+.ui {
+    box-shadow: 0px 0px 8px #ccc;
+}
+
 
 /* TECH STACK */
 
@@ -245,6 +253,7 @@ footer {
     border-top: 1px solid #eee;
 }
 footer p {
+    color: #333;
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -256,5 +265,8 @@ footer p {
 @media only screen and (max-width: 720px) {
     .grid, .hero, .design-system {
         grid-template-columns: 1fr;
+    }
+    .icon {
+        width: 48px;
     }
 }

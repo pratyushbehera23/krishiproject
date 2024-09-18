@@ -1,0 +1,46 @@
+/* Header */
+
+header {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.logo {
+    text-align: center;
+    color: #0f0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.phoneno {
+    display: inline;
+    /* text-align: right; */
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 2rem;
+    color: #0f0;
+    background: #00ff0033;
+}
+
+/* Hero */
+
+
+/* Footer */
+
+footer {
+    padding: 2rem;
+}
+footer p {
+    text-align: center;
+    color: #555;
+}
