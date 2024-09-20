@@ -172,13 +172,28 @@ th {
     padding-top: 1rem;
 }
 
+.logos {
+    display: flex;
+    gap: 2rem;
+}
 .logo {
     margin-top: 2rem;
+    /* height: 3.2rem; */
 }
 
+.fonts {
+    display: flex;
+    gap: 2rem;
+}
 .font {
     font-size: 6rem;
     font-family: Verdana, Tahoma, sans-serif;
+}
+.f1 {
+    font-family: sans-serif;
+}
+.f2 {
+    font-family: cursive;
 }
 
 .colors {
@@ -199,6 +214,9 @@ th {
 }
 .c3 {
     background: #00B812;
+}
+.c4 {
+    background: #013F07;
 }
 
 
