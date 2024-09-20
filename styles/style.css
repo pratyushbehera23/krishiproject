@@ -145,8 +145,18 @@ th {
     text-decoration: none;
     color: #fff;
     background: var(--color-primary);
+    transition: all 0.3s;
+}
+.btn:hover {
+    opacity: 0.8;
 }
 
+.vidyt {
+    transition: all 0.3s;
+}
+.vidyt:hover {
+    transform: scale(98%);
+}
 .vidimg {
     max-width: 90vw;
     width: 500px;
