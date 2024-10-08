@@ -1,3 +1,40 @@
+/* Root */
+
+:root {
+    --color-primary: #009600;
+}
+
+
+/* Text selection color */
+
+::-moz-selection {
+    color: #fff;
+    background: var(--color-primary);
+}
+::selection {
+    color: #fff;
+    background: var(--color-primary);
+}
+
+
+/* Custom scrollbar */
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+
 /* General */
 
 * {

@@ -3,28 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bail Reckoner</title>
+    <title>KrishiMitra - Direct Market Access for Farmers</title>
+    <link rel="shortcut icon" href="assets/react-native-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/page.css">
+    <script src="scripts/page.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="page.html">Home</a></li>
-                <li><a href="page.html#about">About</a></li>
-            </ul>
+            <div class="heading">KrishiMitra</div>
+            <span class="sideMenuButton" onclick="openNavbar()">&#9776;</span>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        <span class="logo">Bail Reckoner</span>
-        <div>
-            <a class="phoneno" href="tel:+011-24300606">011-24300606</a>
+        <!-- Side navigation bar for responsive website -->
+        <div class="sideNavigationBar" 
+            id="sideNavigationBar">
+            <a href="#" class="closeButton" onclick="closeNavbar()">&#10005;</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
         </div>
     </header>
     <main>
-        <section id="hero"></section>
+        <section id="hero" class="hero">
+            <div class="hero-1">
+                <h1>KrishiMitra</h1>
+                <p>Mobile App for Direct Market Access for Farmers</p>
+                <p>A user-friendly mobile platform that enables farmers to showcase their products and connect with buyers directly, enhancing their income potential.</p>
+                <a class="btn" href="">Download</a>
+            </div>
+            <div class="hero-2">
+                <img src="assets/bg-demo.jpg" width="500">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About</h2>
+            <div class="boxes">
+                <div class="box">
+                    <p class="topic">Background</p>
+                    <p>Farmers often face challenges in accessing markets, leading to lower income due to middlemen. This gap restricts their ability to sell produce at fair prices.</p>
+                </div>
+                <div class="box">
+                    <p class="topic">Description</p>
+                    <p>Create a mobile application that connects farmers directly with consumers and retailers. The app should include features for listing produce, negotiating prices, and managing transactions, thereby reducing dependence on intermediaries.</p>
+                </div>
+                <div class="box">
+                    <p class="topic">Solution</p>
+                    <p>A user-friendly mobile platform that enables farmers to showcase their products and connect with buyers directly, enhancing their income potential.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <div class="contactMenu">
+                <div>
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name here">
+                    <label>Email</label>
+                    <input type="text" placeholder="Enter your email here">
+                    <label>Message</label>
+                    <input type="text" placeholder="Enter your message here...">
+                    <a class="btn" href="">Send</a>
+                </div>
+                <div class="contactInfo">
+                    <h3>Contact Us</h3>
+                    <p class="footerContent">A-12, 2nd Floor, Corporate Tower, Sector-23, Jsg, Odisha - 768201</p>
+                    <h3>More Information</h3>
+                    <p class="footerContent">KrishiMitra is a mobile application that connects farmers directly with consumers and retailers. The app should include features for listing produce, negotiating prices, and managing transactions, thereby reducing dependence on intermediaries.</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>&copy; Bail Reckoner 2024</p>
+        <p>&copy; KrishiMitra 2024</p>
     </footer>
 </body>
 </html>
